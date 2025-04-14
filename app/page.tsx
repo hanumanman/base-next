@@ -1,3 +1,4 @@
+import { ModeToggle } from '@/components/theme-toggler';
 import Image from 'next/image';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
           height={38}
           priority
         />
+
         <ol className="list-inside list-decimal text-center font-[family-name:var(--font-geist-mono)] text-sm/6 sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{' '}
@@ -21,6 +23,10 @@ export default function Home() {
             .
           </li>
           <li className="tracking-[-.01em]">Save and see your changes instantly.</li>
+          <li className="mb-2 tracking-[-.01em]">
+            {'Change your theme '}
+            <ModeToggle />
+          </li>
         </ol>
 
         <div className="flex flex-col items-center gap-4 sm:flex-row">

@@ -6,7 +6,7 @@ import { ThemeProvider } from './theme-provider';
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <ReactQueryProvider>
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <ThemeProvider disableTransitionOnChange attribute="class" defaultTheme="system" enableSystem>
         {children}
       </ThemeProvider>
     </ReactQueryProvider>
