@@ -27,7 +27,7 @@ A modern web application built with Next.js 15, React 19, TypeScript, and Tailwi
 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/hanumanman/base-next.git 998
 cd 998
 ```
 
@@ -37,7 +37,22 @@ cd 998
 npm install
 ```
 
-3. Start the development server
+### Environment Setup
+
+1. Create a `.env.local` file in the root directory
+
+```bash
+cp .env.example .env.local
+```
+
+2. Update the environment variables in `.env.local` with your configuration
+
+```bash
+BASE_URL='http://localhost:3000'
+BETTER_AUTH_SECRET='betterAuth-secret'
+```
+
+### Run the application
 
 ```bash
 npm run dev
